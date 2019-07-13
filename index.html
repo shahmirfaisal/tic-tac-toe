@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe Game</title>
+    <!--Adding Css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Adding Javascript-->
+    <script src="game.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <i class="X fas fa-times"></i> <i class="O fab fa-opera"></i>
+    </header>
+
+    <div id="players">
+      <h2>Player 1: <i class="X fas fa-times"></i></h2>
+      <h2>Player 2: <i class="O fab fa-opera"></i></h2>
+    </div>
+
+    <div id="scoreboard">
+      <h1>Scoreboard</h1>
+      <div id="p1">
+        <p>Player1 : <span id="P1Score">0</span></p>
+      </div>
+      <div id="p2">
+        <p>Player2 : <span id="P2Score">0</span></p>
+      </div>
+    </div>
+
+    <button id="restart">Play Again</button>
+
+    <table id="table">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!--Modal-->
+    <div id="modal">
+      <div id="modal-content">
+        <h3>Winner : <span id="winner"></span></h3>
+        <h3>Loser : <span id="loser"></span></h3>
+      </div>
+      <div id="draw"><h3>Its a Draw</h3></div>
+    </div>
+  </body>
+</html>

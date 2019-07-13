@@ -1,0 +1,168 @@
+body {
+  font-family: "Noto Sans";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+table {
+  box-shadow: 0 0 5px rgb(143, 143, 143);
+  width: 255px;
+  height: 255px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+tr {
+  border-bottom: 3px solid black;
+}
+td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  border-right: 1px solid rgb(192, 192, 192);
+}
+td:last-child {
+  border-right: none;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+
+i {
+  font-size: 5em;
+  margin: 5px;
+  text-shadow: 2px 3px 5px rgb(122, 122, 122);
+}
+.X {
+  color: rgb(0, 89, 255);
+}
+
+.O {
+  color: red;
+  font-size: 4em;
+}
+
+td i {
+  font-size: 2.8em;
+}
+
+td .O {
+  font-size: 2.5em;
+}
+
+#players {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+#player h2 {
+  margin: 0 10px;
+}
+#players h2 .X {
+  font-size: 1.1em;
+  margin: 5px 0 0 0;
+  text-shadow: 1px 1px 3px rgb(122, 122, 122);
+}
+#players h2 .O {
+  font-size: 0.9em;
+  margin: 10px 0 0 0;
+  text-shadow: 1px 1px 3px rgb(122, 122, 122);
+}
+
+#modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#modal-content {
+  background-color: white;
+  padding: 20px 50px;
+}
+#draw {
+  display: none;
+  padding: 20px 50px;
+  background-color: white;
+}
+
+#restart {
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  display: none;
+}
+
+#scoreboard {
+  display: flex;
+  width: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(0, 204, 255);
+  border-radius: 5px 5px 0 0;
+}
+#scoreboard h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+#scoreboard div {
+  width: 50%;
+  text-align: center;
+  background-color: dodgerblue;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#scoreboard p {
+  font-weight: 900;
+}
+
+#scoreboard div:last-child {
+  background-color: red;
+}
+
+@media (max-width: 700px) {
+  #players {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  #players {
+    width: 100%;
+  }
+  #players h2 {
+    font-size: 1em;
+    margin: 0 10px;
+  }
+  #scoreboard {
+    width: 95%;
+  }
+  #scoreboard div p {
+    font-size: 0.9em;
+  }
+}
